@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2 JS</title>
+</head>
+
+<body>
+
+    <script>
+        let livros = [
+            {
+                titulo: `Cristianismo Puro e Simples`,
+                autor: `C.S. Lewis`,
+                ano: 1946,
+                emprestado: false,
+                categorias: [`Fé`, `Filosofia`, `história`, `Literatura Cristã`],
+                revisoes: [
+                    {
+                        comentario: "Livro maravilhoso",
+                        avaliacao: 5
+                    },
+
+                    {
+                        comentario: "Leitura obrigatória",
+                        avaliacao: 5
+                    }
+
+                ]
+
+            }
+        ]
+        var disponibilidade = "disponível";
+        if (livros[0].emprestado) {
+            disponibilidade = "indisponível";
+        }
+
+        console.log("Título do livro: " + livros[0].titulo + ", Nome do autor: " + livros[0].autor + ", Ano de publicação: " + livros[0].ano + " Disponibilidade: " + disponibilidade + ", Categoria: " + livros[0].categorias[0] + ", Avaliação: " + livros[0].revisoes[0].avaliacao)
+
+    </script>
+
+</body>
+
+</html>

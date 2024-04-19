@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function valorDesconto(precoInicial, percDesconto) {
+            var valorDesconto = precoInicial * (percDesconto / 100);
+            var precoFinal = precoInicial - valorDesconto;
+
+            console.log("Valor inicial do produto: R$" + precoInicial);
+            console.log("Valor de desconto: R$" + valorDesconto);
+
+            return precoFinal
+        }
+
+       console.log("Preço final do produto: R$" + valorDesconto(250, 10))
+
+    </script>
+
+</body>
+
+</html>
